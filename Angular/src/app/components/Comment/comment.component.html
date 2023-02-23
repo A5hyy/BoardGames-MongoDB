@@ -1,0 +1,25 @@
+<p>comment works!</p>
+
+<h2>Comments ({{ comment.length }})</h2>
+
+<h4>
+  <a [routerLink]="['/']">Back</a>
+</h4>
+
+<div *ngFor="let c of comment" class="comment">
+  <table border="3">
+    <tr>
+      <td>User:</td>
+      <td><code>{{ c?.user }}</code></td>
+    </tr>
+    <tr>
+      <td>Comment:</td>
+      <td>{{ c?.c_text }}</td>
+    </tr>
+    <tr>
+      <td>Rating:</td>
+      <td>{{ c?.rating }}</td>
+    </tr>
+  </table>
+
+</div>

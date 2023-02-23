@@ -1,0 +1,17 @@
+<p>game works!</p>
+
+<!-- <h2>List of Games</h2>
+
+<ul>
+    <li *ngFor="let g of games" [routerLink]="['/game', g.gid, 'comments']">
+        <h4>{{g.name}}</h4>
+    </li>
+</ul> -->
+
+<h2>List Of Games</h2>
+<div *ngFor="let g of games" class="game" 
+    [routerLink]="['/game', g.gid, 'comments']">
+    <img src={{g.image}}>
+    <h4>{{  g.name  }}</h4>
+
+</div>
